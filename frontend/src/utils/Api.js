@@ -3,7 +3,6 @@ import { configApi } from "./constants"
  class Api {
   constructor() {
     this._url = configApi.url;
-    //this._headers = configApi;
   }
 
   _onError = (res) => {
@@ -14,26 +13,15 @@ import { configApi } from "./constants"
   }
 
   getUserInfo = (token) => {
-    //console.log(configApi.authorization);
     return fetch(`${this._url}users/me`, {
       method: "GET",
       credentials: 'include',
       headers: {
         authorization:`Bearer ${token}`,
         "content-type": "application/json",
-      } //configApi.headers
-      //headers: this._headers,
-      //body: JSON.stringify(user),
+      } 
     }).then(this._onError);
   };
-
-  // setUserInfo = (data) => {
-  //   return fetch(`${this._url}users/me`, {
-  //     method: "POST",
-  //     headers: configApi.headers,
-  //     body: JSON.stringify(data),
-  //   }).then(this._onError);
-  // };
 
   getCards = (token) => {
     return fetch(`${this._url}cards`, {
@@ -43,9 +31,6 @@ import { configApi } from "./constants"
         authorization:`Bearer ${token}`,
         "content-type": "application/json",
       }
-      //headers: configApi.headers,
-      //headers: this._headers,
-      //body: JSON.stringify(user),
     }).then(this._onError);
   };
 
@@ -56,7 +41,6 @@ import { configApi } from "./constants"
         authorization:`Bearer ${token}`,
         "content-type": "application/json",
       },
-      //headers: configApi.headers,
       body: JSON.stringify(data),
     }).then(this._onError);
   };
@@ -68,7 +52,6 @@ import { configApi } from "./constants"
         authorization:`Bearer ${token}`,
         "content-type": "application/json",
       }
-      //headers: configApi.headers,
     }).then(this._onError);
   };
 
@@ -79,7 +62,6 @@ import { configApi } from "./constants"
         authorization:`Bearer ${token}`,
         "content-type": "application/json",
       },
-      //headers: configApi.headers,
       body: JSON.stringify(userData),
     }).then(this._onError);
   };
@@ -91,7 +73,6 @@ import { configApi } from "./constants"
         authorization:`Bearer ${token}`,
         "content-type": "application/json",
       },
-      //headers: configApi.headers,
       body: JSON.stringify(avatar),
     }).then(this._onError);
   };
@@ -103,7 +84,6 @@ import { configApi } from "./constants"
         authorization:`Bearer ${token}`,
         "content-type": "application/json",
       }
-      //headers: configApi.headers,
     }).then(this._onError);
   };
 }
