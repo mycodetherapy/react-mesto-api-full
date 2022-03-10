@@ -36,13 +36,13 @@ module.exports.login = (req, res, next) => {
       const token = jwt.sign({ _id: user._id }, 'some-secret-key', {
         expiresIn: '7d',
       });
-      //const id = user._id;
+      // const id = user._id;
       res.send({ token });
     }).catch(next);
 };
 
 module.exports.getUserInfo = (req, res, next) => {
-  //console.log(req);
+  // console.log(req);
   User.findById(req.user._id)
     .then((users) => {
       if (!users) {

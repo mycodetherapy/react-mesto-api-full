@@ -16,7 +16,7 @@ const { NotFoundError } = require('./errors');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-//app.use(cors);
+// app.use(cors);
 
 app.use(cors({
   origin: 'https://photosave.nomoredomains.xyz',
