@@ -10,13 +10,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mycodetherapy/express-mesto.git"
+    "url": "git+https://github.com/mycodetherapy/react-mesto-api-full.git"
   },
   "keywords": [],
   "author": "Maksim Ovchinnikov",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mycodetherapy/express-mesto/issues"
+    "url": "https://github.com/mycodetherapy/react-mesto-api-full/issues"
   },
   "homepage": "./",
   "dependencies": {
