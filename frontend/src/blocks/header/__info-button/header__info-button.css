@@ -1,0 +1,14 @@
+.header__info-button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  color: #A9A9A9;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .header__info-button {
+    margin-bottom: 40px;
+  }
+}
