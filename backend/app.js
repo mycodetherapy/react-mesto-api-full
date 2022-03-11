@@ -45,11 +45,11 @@ app.use(auth);
 app.use('/users', require('./routes/users'));
 app.use('/cards', require('./routes/cards'));
 
-app.use(errorLogger);
-
 app.use((req, res, next) => {
   next(new NotFoundError('Маршрут не существует.'));
 });
+
+app.use(errorLogger);
 
 app.use(errors());
 app.use(errorsHandler);
