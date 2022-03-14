@@ -4,3 +4,6 @@
 Домен: http://photosave.nomoredomains.xyz
 
 Сервер: http://api.photosave.nomoredomains.work
+
+Для получения доступа необходима регистрация.
+
