@@ -1,4 +1,4 @@
-export const BASE_URL = "https://api.photosave.nomoredomains.work";//"https://auth.nomoreparties.co";
+export const BASE_URL = "https://api.photosave.nomoredomains.work";
 
 export const register = (password, email) => {
   console.log(password, email);
@@ -8,19 +8,18 @@ export const register = (password, email) => {
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ password: password, email: email }),
+    body: JSON.stringify({ password, email }),
   })
-    .then((response) => { 
+    .then((res) => { 
       try {
-        if (response.status === 200) {
-          return response.json();
+        if (res.ok) {
+          return res.json();
         }
       } catch (e) {
         return e;
       }
     })
     .then((res) => {
-      console.log(res);
       return res;
     })
     .catch((err) => console.log(err));
@@ -33,7 +32,7 @@ export const authorization = (password, email) => {
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ password: password, email: email }),
+    body: JSON.stringify({ password, email }),
   })
     .then((res) => res.json())
     .then((data) => {
@@ -52,7 +51,6 @@ export const getContent = (token) => {
       headers: {
         'Content-Type': 'application/json',
         'Authorization': `Bearer ${token}`,
-        //'Authorization': token
       }
     })
     .then(res => res.json())
