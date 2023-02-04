@@ -1,21 +1,23 @@
 # react-mesto-api-full
-Репозиторий для приложения проекта `Mesto`, включающий фронтенд и бэкенд части приложения со следующими возможностями: авторизация и регистрация пользователей, операции с карточками и пользователями. 
-  
-Домен: http://photosave.nomoredomains.xyz
 
-Сервер: http://api.photosave.nomoredomains.work
+Repository for the Mesto project application, which includes frontend and backend parts of the application with the following features: authorization and registration of users, operations with cards and users.
 
-Для получения доступа необходима регистрация.
+Domain: http://photosave.nomoredomains.xyz
 
-## Как это работает
-* Дерево элементов строится с помощью инструментов библиотеки React.js.
-* Клиент отправляет featch-запросы к API.
-* Сервер на платформе Node.js принимает данные и отдает ответ.
-* Для упрощения обслуживания код серверной части написан с использованием функций Express.
-* Данные пишутся в MongoDB.
-* Непрерывную работоспособность обеспечивает pm2.
-* Перенаправление запросов осуществляет Nginx.
+Server: http://api.photosave.nomoredomains.work
 
-## Планы на будущее
-На сегодняшний день интерфейс клиента не позволяет напрямую увидеть создателя карточки и пользователей оценивших её, хотя API это предусматривает. Поэтому в мои планы входит поиск дизайнерского решения и соответствующее расширение функциональности.
+Registration is required to gain access.
 
+## How it works
+
+- The tree of elements is built using the library tools React.js .
+- The client sends featch requests to the API.
+- Server on the Node platform.js accepts the data and returns a response.
+- To simplify maintenance, the server-side code is written using Express functions.
+- Data is written in MongoDB.
+- Continuous operation is provided by pm2.
+- Requests are redirected by Nginx.
+
+## Future plans
+
+To date, the client interface does not allow you to directly see the creator of the card and the users who rated it, although the API provides for this. Therefore, my plans include the search for a design solution and the corresponding expansion of functionality.
